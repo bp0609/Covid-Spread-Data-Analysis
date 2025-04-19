@@ -1,10 +1,11 @@
 {
+  "homepage": "https://bp0609.github.io/Covid-Spread-Data-Analysis",
   "name": "my-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
