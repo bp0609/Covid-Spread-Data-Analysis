@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import "../styles/BlogStyles.css";
 
 const Image = ({
   src,
@@ -8,31 +9,30 @@ const Image = ({
   caption = "",
   style = {},
 }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   if (!src) {
     return <p>Error: No image source provided.</p>;
   }
 
   return (
-    <figure style={{ textAlign: "center", margin: "1rem 0" }}>
-      <img
-        src={src}
-        alt={alt}
-        style={{
-          width,
-          height,
-          borderRadius: "8px",
-          boxShadow: "0 0 8px rgba(0,0,0,0.1)",
-          ...style,
-        }}
-      />
-      {caption && (
-        <figcaption
-          style={{ marginTop: "0.5rem", fontSize: "0.9rem", color: "#666" }}
-        >
-          {caption}
-        </figcaption>
-      )}
-    </figure>
+    <div className="enhanced-image">
+      <figure>
+        <img
+          src={src}
+          alt={alt}
+          style={{
+            width,
+            height,
+            opacity: isLoaded ? 1 : 0,
+            transition: "opacity 0.5s ease",
+            ...style,
+          }}
+          onLoad={() => setIsLoaded(true)}
+        />
+        {caption && <figcaption>{caption}</figcaption>}
+      </figure>
+    </div>
   );
 };
 

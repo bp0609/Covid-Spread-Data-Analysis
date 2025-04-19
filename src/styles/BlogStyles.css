@@ -1,0 +1,339 @@
+/* BlogStyles.css - Styling for the Blog component */
+
+/* Main blog container */
+.blog-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive container */
+@media (max-width: 768px) {
+  .blog-page {
+    padding: 1rem;
+  }
+}
+
+/* Headings */
+.blog-page h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.blog-page h1:hover {
+  color: #3498db;
+}
+
+.blog-page h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.blog-page h2:hover {
+  color: #3498db;
+}
+
+.blog-page h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.blog-page h3:hover {
+  color: #3498db;
+}
+
+.blog-page h4, .blog-page h5 {
+  color: #34495e;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  transition: color 0.3s ease;
+}
+
+.blog-page h4:hover, .blog-page h5:hover {
+  color: #3498db;
+}
+
+/* Paragraphs */
+.blog-page p {
+  margin-bottom: 1.2rem;
+  color: #333;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Lists */
+.blog-page ul, .blog-page ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.blog-page li {
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+/* Code blocks */
+.blog-page pre {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border-left: 4px solid #3498db;
+}
+
+.blog-page code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f1f2f6;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  color: #e74c3c;
+}
+
+/* Horizontal rule */
+.blog-page hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  margin: 2rem 0;
+}
+
+/* Hypothesis cards */
+.card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.hypothesis {
+  background-color: #e3f2fd;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #2196f3;
+}
+
+.hypothesis h1 {
+  color: #1565c0;
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.hypothesis h3 {
+  color: #1976d2;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+/* Strong text */
+.blog-page strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Image styling */
+.blog-page figure {
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-page img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Ensure the image stays above other elements but below tooltips */
+}
+
+.blog-page figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Iframe styling */
+.blog-page iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 1.5rem 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-page iframe:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .blog-page h1 {
+    font-size: 2rem;
+  }
+
+  .blog-page h2 {
+    font-size: 1.6rem;
+  }
+
+  .blog-page h3 {
+    font-size: 1.3rem;
+  }
+
+  .blog-page p, .blog-page li {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .hypothesis {
+    padding: 0.8rem;
+  }
+
+  .hypothesis h1 {
+    font-size: 1.5rem;
+  }
+
+  .hypothesis h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 480px) {
+  .blog-page {
+    padding: 0.8rem;
+  }
+
+  .blog-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-page h2 {
+    font-size: 1.4rem;
+  }
+
+  .blog-page h3 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+}
+
+/* Enhance the Image component */
+.enhanced-image {
+  position: relative;
+  overflow: visible; /* Changed from hidden to visible to allow tooltips to show */
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 90%;
+}
+
+.enhanced-image img {
+  display: block;
+  width: 100%;
+  transition: transform 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.enhanced-image:hover img {
+  transform: scale(1.03);
+  z-index: 2;
+}
+
+/* Ensure tooltips and axis labels are always visible */
+.enhanced-image svg text,
+.enhanced-image .plotly-graph-div .main-svg .infolayer,
+.enhanced-image .plotly-graph-div .main-svg .cartesianlayer .yaxislayer-above,
+.enhanced-image .plotly-graph-div .main-svg .cartesianlayer .xaxislayer-above {
+  pointer-events: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 1000 !important;
+}
+
+/* Enhance the Iframe component */
+.enhanced-iframe {
+  position: relative;
+  overflow: visible; /* Changed from hidden to visible to allow tooltips to show */
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 95%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.enhanced-iframe iframe {
+  display: block;
+  width: 100%;
+  border: none;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.enhanced-iframe:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure tooltips and axis labels are always visible in iframes */
+.enhanced-iframe iframe {
+  overflow: visible !important;
+}
+
+/* Fix for Plotly charts in iframes */
+.js-plotly-plot .plotly .main-svg .infolayer,
+.js-plotly-plot .plotly .main-svg .cartesianlayer .yaxislayer-above,
+.js-plotly-plot .plotly .main-svg .cartesianlayer .xaxislayer-above {
+  pointer-events: auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 1000 !important;
+}

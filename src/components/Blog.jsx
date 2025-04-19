@@ -1,5 +1,8 @@
 import Iframe from "./Iframe";
 import Image from "./Image";
+import "../styles/BlogStyles.css";
+import "../styles/BlogStyles.css";
+
 const Blog = () => {
   return (
     <div className="blog-page">
