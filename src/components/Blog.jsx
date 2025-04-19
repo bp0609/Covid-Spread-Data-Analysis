@@ -1,12 +1,31 @@
 import Iframe from "./Iframe";
 import Image from "./Image";
 import "../styles/BlogStyles.css";
-import "../styles/BlogStyles.css";
 
 const Blog = () => {
   return (
     <div className="blog-page">
       <h1>Data Science Analysis Blog</h1>
+      <div className="authors-section">
+        <h3>Authors</h3>
+        <div className="author-list">
+          <div className="author">
+            <div className="author-name">Bhavik Patel</div>
+            <div className="author-id">22110047</div>
+            <div className="author-dept">Computer Science and Engineering</div>
+          </div>
+          <div className="author">
+            <div className="author-name">Jinil Patel</div>
+            <div className="author-id">22110184</div>
+            <div className="author-dept">Computer Science and Engineering</div>
+          </div>
+          <div className="author">
+            <div className="author-name">Pranav Patil</div>
+            <div className="author-id">22110199</div>
+            <div className="author-dept">Computer Science and Engineering</div>
+          </div>
+        </div>
+      </div>
       <h2>General Analysis</h2>
       <p>
         The COVID-19 dataset from Our World in Data provides a comprehensive
